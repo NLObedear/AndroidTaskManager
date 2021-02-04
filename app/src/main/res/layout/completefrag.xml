@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menubackground">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Complete task"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/timetaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:hint="Time Taken"
+        android:layout_marginLeft="35dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timetaken"
+        android:layout_marginTop="5dp"
+        android:hint="Date completed"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <Button
+    android:id="@+id/complete"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+    android:layout_below="@+id/date"
+    android:layout_marginTop="5dp"
+    android:text="Complete Task"
+    android:layout_marginLeft="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/complete"
+        android:layout_marginTop="5dp"
+        android:text="Back"
+        android:layout_marginLeft="50dp"
+        android:background="@color/white"
+        android:textColor="@color/black"/>
+</RelativeLayout>

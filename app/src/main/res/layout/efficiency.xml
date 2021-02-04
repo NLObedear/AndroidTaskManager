@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/toolbar2"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Efficiency: "
+        android:layout_below="@+id/toolbar2"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/efficiency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/toolbar2"
+        android:layout_toRightOf="@+id/title"
+
+        android:textSize="18dp"
+        android:text="percentage" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Tasks Completed: "
+        android:layout_below="@+id/title"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/title2"
+        android:layout_below="@+id/title"
+        android:textSize="18dp"
+        android:text="percentage" />
+
+
+</RelativeLayout>

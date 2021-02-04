@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/toolbar2"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginLeft="40dp"
+        android:text=""
+        android:hint="Task Name" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="Desc" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="Priority 1-10 " />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/editText3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="Estimated time in hours" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/editText4"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="date to complete by DD/MM/YY" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:id="@+id/submit"
+        android:layout_below="@id/editText5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="Save"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:id="@+id/delete"
+        android:layout_toRightOf="@id/submit"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="Delete"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
